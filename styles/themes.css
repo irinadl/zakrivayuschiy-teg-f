@@ -4,3 +4,48 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-dark {
+    --font-weight: 465;
+    --title-font-weight: 785;
+    --bg-color:  #000000;
+    --accent-color: #00CC14;
+    --bg-image:
+    repeating-linear-gradient(-90deg, #000, #000 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(#000, #000 2px, transparent 2px, transparent 4px),
+    linear-gradient(#007f0c 0.01%, #004306);
+    --btn-hover-color: #00CC14;
+    --heart-contour-color: #00CC14;
+   
+ 
+}
+
+:root.theme-light {
+    --font-weight: 400;
+    --title-font-weight: 700;
+    --bg-color:  #fff;
+    --accent-color: #000000;
+    --bg-image:
+    repeating-linear-gradient(-90deg, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(#d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    --btn-hover-color: #fff;
+    --heart-contour-color: #000;
+   
+ 
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --font-weight: 465;
+        --title-font-weight: 785;
+        --bg-color:  #000000;
+        --accent-color: #00CC14;
+    --bg-image:
+    repeating-linear-gradient(-90deg, #000, #000 2px, transparent 2px, transparent 4px),
+    repeating-linear-gradient(#000, #000 2px, transparent 2px, transparent 4px),
+    linear-gradient(#007f0c 0.01%, #004306);
+    --btn-hover-color: #00CC14;
+    --heart-contour-color: #00CC14;
+   
+    }
+}
