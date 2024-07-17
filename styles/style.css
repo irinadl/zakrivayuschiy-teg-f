@@ -275,7 +275,7 @@ h2 {
 }
 
 .button:focus-visible {
-  box-shadow: 2px 2px 0 0 var(--accent-color);
+  box-shadow: 2px 2px 0 0 var(--accent-color, #000000);
   transition: 0.3s ease;
 }
 
@@ -350,7 +350,7 @@ h2 {
   from {
     transform: scale(1);
   }
-  
+
   to {
     transform: scale(1.5);
   }
@@ -385,19 +385,10 @@ h2 {
 }
 
 .save-button {
-  border: none;
-  background-color: var(--bg-color, #fff);
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 15px 19px;
-  border: 2px solid var(--accent-color);
-}
-
-.card__like-button:focus-visible,
-.save-button:focus-visible {
-  box-shadow: 2px 2px 0 0 var(--accent-color);
-  transition: 0.3s ease;
 }
 
 /*Настройки мобильной версии*/
