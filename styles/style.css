@@ -163,35 +163,35 @@ h2 {
 
 /*Раскрашиваем картинки по порядку*/
 
-.sepia {
+.filter-sepia {
   filter: sepia(80%);
 }
 
-.saturate-brightness {
+.filter-saturate-brightness {
   filter: saturate(158%) brightness(150%);
 }
 
-.invert {
+.filter-invert {
   filter: invert(0.7);
 }
 
-.hue-rotate-plus {
+.filter-hue-rotate-plus {
   filter: brightness(200%) saturate(60%) hue-rotate(90deg);
 }
 
-.hue-rotate-minus {
+.filter-hue-rotate-minus {
   filter: brightness(200%) saturate(60%) hue-rotate(-90deg);
 }
 
-.saturate-max {
+.filter-saturate-max {
   filter: saturate(300%);
 }
 
-.blur {
+.filter-blur {
   filter: blur(7px);
 }
 
-.contrast {
+.filter-contrast {
   filter: contrast(250%);
 }
 
@@ -303,38 +303,17 @@ h2 {
   align-self: center;
 }
 
-/*Настройки мобильной версии*/
-
-@media (width <=375px) {
-  .container {
-    width: 100%;
-  }
-
-  .header {
-    padding-block-start: 120px;
-  }
-
-  .save-button {
-    flex-direction: column;
-  }
-
-  .save-button svg {
-    width: 28px;
-    height: 28px;
-  }
-}
-
 /*Диалоговое окно*/
 
 dialog {
-  inline-size: 353px;
+  width: 353px;
   border: 2px solid var(--accent-color, #000000);
   background-color: var(--bg-color, #fff);
   color: var(--accent-color, #000000);
   font-family: var(--accent-font-family, fantasy);
   inset: 0;
   position: fixed;
-  padding: 30px;
+  padding: 28px;
 }
 
 .dialog-content {
@@ -370,4 +349,30 @@ dialog {
 dialog::backdrop {
   background: #000;
   opacity: 0.75;
+}
+
+/*Настройки мобильной версии*/
+
+@media (width <=375px) {
+  .container {
+    width: 100%;
+  }
+
+  .header {
+    padding-block-start: 120px;
+  }
+
+  .save-button {
+    flex-direction: column;
+  }
+
+  .save-button svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  dialog {
+    width: 341px;
+    padding: 38px;
+  }
 }
