@@ -19,7 +19,7 @@
   <body class="page">
     <header class="header container">
       <div class="logo-group">
-        <span class="logo">&lt;/html&gt;</span>
+        <a href="#" class="logo">&lt;/html&gt;</a>
         <h1>закрывающий тег</h1>
       </div>
       <nav class="theme-menu header__theme-menu">
@@ -55,7 +55,7 @@
           <img
             src="./images/image.jpg"
             alt="фото студентки в аудитории в ретро-стиле"
-            class="image first"
+            class="image sepia"
             loading="lazy"
           />
           <p class="watermark">&lt;/html&gt;</p>
@@ -75,7 +75,8 @@
         <div class="card-button">
           <button type="button" class="card__icon-button">
             <svg
-              class="like-icon"
+              class="like-icon" 
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -117,7 +118,7 @@
           <img
             src="./images/image.jpg"
             alt="фото студентки в аудитории в ярком свете"
-            class="image second"
+            class="image saturate-brightness"
             loading="lazy"
           />
           <p class="watermark">&lt;/html&gt;</p>
@@ -137,7 +138,8 @@
         <div class="card-button">
           <button type="button" class="card__icon-button">
             <svg
-              class="like-icon"
+              class="like-icon" 
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -179,7 +181,7 @@
           <img
             src="./images/image.jpg"
             alt="негатив фото студентки в аудитории"
-            class="image third"
+            class="image invert"
             loading="lazy"
           />
           <p class="watermark">&lt;css&gt;</p>
@@ -200,6 +202,7 @@
           <button type="button" class="card__icon-button">
             <svg
               class="like-icon"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -241,7 +244,7 @@
           <img
             src="./images/image.jpg"
             alt="фото студентки в аудитории с высокой яркостью и насыщенностью с зеленым оттенком"
-            class="image fourth"
+            class="image hue-rotate-plus"
             loading="lazy"
           />
           <p class="watermark">&lt;desigions&gt;</p>
@@ -262,7 +265,8 @@
         <div class="card-button">
           <button type="button" class="card__icon-button">
             <svg
-              class="like-icon"
+              class="like-icon" 
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -304,7 +308,7 @@
           <img
             src="./images/image.jpg"
             alt="фото студентки в аудитории с высокой яркостью и насыщенностью с фиолетовым оттенком"
-            class="image fifth"
+            class="image .hue-rotate-minus"
             loading="lazy"
           />
           <p class="watermark">care</p>
@@ -327,6 +331,7 @@
           <button type="button" class="card__icon-button">
             <svg
               class="like-icon"
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -368,7 +373,7 @@
           <img
             src="./images/image.jpg"
             alt="фото студентки в аудитории с очень высокой насыщенностью"
-            class="image six"
+            class="image saturate-max"
             loading="lazy"
           />
           <p class="watermark">&lt;support&gt;</p>
@@ -388,7 +393,8 @@
         <div class="card-button">
           <button type="button" class="card__icon-button">
             <svg
-              class="like-icon"
+              class="like-icon" 
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -430,7 +436,7 @@
           <img
             src="./images/image.jpg"
             alt="фото студентки в аудитории с размытием"
-            class="image seventh"
+            class="image blur"
             loading="lazy"
           />
           <p class="watermark">&lt;lifes-style: none;&gt;</p>
@@ -451,7 +457,8 @@
         <div class="card-button">
           <button type="button" class="card__icon-button">
             <svg
-              class="like-icon"
+              class="like-icon" 
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -493,7 +500,7 @@
           <img
             src="./images/image.jpg"
             alt="фото студентки в аудитории с высокой контрастностью"
-            class="image eighth"
+            class="image contrast"
             loading="lazy"
           />
           <p class="watermark">&lt;experience&gt;</p>
@@ -515,7 +522,8 @@
         <div class="card-button">
           <button type="button" class="card__icon-button">
             <svg
-              class="like-icon"
+              class="like-icon" 
+              aria-hidden="true"
               width="39"
               height="36"
               viewBox="0 0 39 36"
@@ -551,8 +559,7 @@
           </button>
         </div>
       </article>
-      <footer class="footer">
-        <button
+      <button
           type="button"
           onclick="window.saveDialog.showModal()"
           aria-controls="saveDialog"
@@ -562,8 +569,8 @@
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>
           <span class="button__text">Сохранить на память</span>
-        </button>
-      </footer>
+      </button>
+      
     </main>
     <dialog id="saveDialog">
       <div class="dialog-content">
@@ -575,7 +582,7 @@
         <p>Вставьте дискету, чтобы продолжить</p>
       </div>
       <form method="dialog">
-        <button type="submit" class="dialog-button">ок</button>
+        <button type="submit" class="dialog-button button">ок</button>
       </form>
     </dialog>
     <script src="./scripts/like.js"></script>
