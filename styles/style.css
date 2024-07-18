@@ -114,7 +114,6 @@ button:disabled {
   opacity: 0.6;
 }
 
-
 .theme-menu__button::after {
   content: "";
   display: block;
@@ -178,7 +177,6 @@ h2 {
 
 .hue-rotate-plus {
   filter: brightness(200%) saturate(60%) hue-rotate(90deg);
-
 }
 
 .hue-rotate-minus {
@@ -194,9 +192,8 @@ h2 {
 }
 
 .contrast {
-  filter: contrast(250%)
+  filter: contrast(250%);
 }
-
 
 .watermark {
   position: absolute;
@@ -208,10 +205,11 @@ h2 {
   font-size: 14px;
   mix-blend-mode: hard-light;
   opacity: 0.5;
-  text-shadow: -1px 0 var(--bg-color, #fff), 0 1px var(--bg-color, #fff), 1px 0 var(--bg-color, #fff), 0 -1px var(--bg-color, #fff);
+  text-shadow: -1px 0 var(--bg-color, #fff), 0 1px var(--bg-color, #fff),
+    1px 0 var(--bg-color, #fff), 0 -1px var(--bg-color, #fff);
 }
 
-@supports(-webkit-text-stroke: 1px var(--bg-color, #fff)) {
+@supports (-webkit-text-stroke: 1px var(--bg-color, #fff)) {
   .watermark {
     -webkit-text-stroke: 1px var(--bg-color, #fff);
     text-shadow: none;
